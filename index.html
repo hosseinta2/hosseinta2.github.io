@@ -5,21 +5,56 @@
 <title>Hossein Taheri — Academic Website</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body { font-family: Arial, sans-serif; max-width: 900px; margin:auto; padding:20px; line-height:1.6; }
+body { 
+    font-family: Arial, sans-serif; 
+    max-width: 900px; 
+    margin:auto; 
+    padding:20px; 
+    line-height:1.6; 
+    position: relative; /* Needed for absolute positioning of the photo */
+}
 h1, h2 { color:#333; }
 a { color:#0645AD; text-decoration:none; }
 a:hover { text-decoration:underline; }
 .section { margin-top:40px; }
+
+/* Styles for the profile photo */
+.profile-photo {
+    position: absolute;
+    top: 20px; /* Adjust as needed */
+    right: 20px; /* Position from the right edge of the body content */
+    width: 150px; /* Example size, adjust as needed */
+    height: 150px; /* Example size, adjust as needed */
+    border-radius: 50%; /* Makes the photo circular */
+    object-fit: cover; /* Ensures the image covers the area nicely */
+    z-index: 10; /* Ensures it sits above other elements */
+}
+
+/* Adjust header and info layout to make room for the photo */
+.header-content {
+    margin-right: 170px; /* Creates space for a 150px photo + 20px margin */
+}
+
+/* Ensure the list item content respects the new list style */
+ol li {
+    padding-top: 5px; /* Add slight padding for readability */
+}
 </style>
 </head>
 <body>
-<h1><strong>Hossein Taheri</strong></h1>
-<p>
-Postdoctoral Scholar, Computer Science & Engineering<br>
-University of California, San Diego<br>
-Email: htaheri[at]ucsd[dot]edu<br>
-<a href="https://scholar.google.com/citations?user=J_MeH1gAAAAJ&hl=en">Google Scholar</a> 
-</p>
+
+<img src="your_photo.jpg" alt="Hossein Taheri Profile Photo" class="profile-photo"> 
+
+<div class="header-content">
+    <h1><strong>Hossein Taheri</strong></h1>
+    <p>
+    Postdoctoral Scholar, Computer Science & Engineering<br>
+    University of California, San Diego<br>
+    Email: htaheri[at]ucsd[dot]edu<br>
+    <a href="https://scholar.google.com/citations?user=J_MeH1gAAAAJ&hl=en">Google Scholar</a> 
+    </p>
+</div>
+
 <div class="section">
 <p>
 I am a Postdoctoral Scholar in the Department of Computer Science and Engineering at UC San Diego, advised by <a href="https://mazumdar.ucsd.edu/" target="_blank">Prof. Arya Mazumdar</a>. 
@@ -44,52 +79,51 @@ I completed my B.Sc. in Electrical Engineering and Mathematics at Sharif Univers
 <ol>
 <li>
 <strong>On the Theory of Continual Learning with Gradient Descent for Neural Networks</strong> <a href="https://arxiv.org/pdf/2510.05573">[link]</a><br>
-**H. Taheri**, A. Ghosh, A. Mazumdar (Preprint).
+H. Taheri, A. Ghosh, A. Mazumdar (Preprint).
 </li>
 <li>
 <strong>Sharper Guarantees for Learning Neural Network Classifiers with Gradient Methods</strong> <a href="https://openreview.net/forum?id=h7GAgbLSmC">[link]</a><br>
-**H. Taheri**, C. Thrampoulidis, A. Mazumdar (ICLR 2025).
+H. Taheri, C. Thrampoulidis, A. Mazumdar (ICLR 2025).
 </li>
 <li>
 <strong>Generalization and Stability of Interpolating Neural Networks with Minimal Width</strong> <a href="https://www.jmlr.org/papers/v25/23-0422.html">[link]</a><br>
-**H. Taheri**, C. Thrampoulidis (JMLR 2024).
+H. Taheri, C. Thrampoulidis (JMLR 2024).
 </li>
 <li>
 <strong>On the Optimization and Generalization of Multi-head Attention</strong> <a href="https://openreview.net/pdf?id=wTGjn7JvYK">[link]</a><br>
-P. Deora*, R. Ghaderi*, **H. Taheri***, C. Thrampoulidis (TMLR 2024, selected for ICLR 2025 poster).
+P. Deora*, R. Ghaderi*, H. Taheri*, C. Thrampoulidis (TMLR 2024, selected for ICLR 2025 poster).
 </li>
 <li>
 <strong>On Generalization of Decentralized Learning with Separable Data</strong> <a href="https://proceedings.mlr.press/v206/taheri23a.html">[link]</a><br>
-**H. Taheri**, C. Thrampoulidis (AISTATS 2023).
+H. Taheri, C. Thrampoulidis (AISTATS 2023).
 </li>
 <li>
 <strong>Fast Convergence in Learning Two-layer Neural Networks with Separable Data</strong> <a href="https://arxiv.org/pdf/2305.13471">[link]</a><br>
-**H. Taheri**, C. Thrampoulidis (AAAI 2023).
+H. Taheri, C. Thrampoulidis (AAAI 2023).
 </li>
 <li>
 <strong>Asymptotic Behavior of Adversarial Training in Binary Linear Classification</strong> <a href="https://arxiv.org/abs/2010.13275">[link]</a><br>
-**H. Taheri**, R. Pedarsani, C. Thrampoulidis (IEEE TNNLS 2023).
+H. Taheri, R. Pedarsani, C. Thrampoulidis (IEEE TNNLS 2023).
 </li>
 <li>
 <strong>Fundamental Limits of Ridge-Regularized Empirical Risk Minimization in High Dimensions</strong> <a href="https://proceedings.mlr.press/v130/taheri21a.html">[link]</a><br>
-**H. Taheri**, R. Pedarsani, C. Thrampoulidis (AISTATS 2021).
+H. Taheri, R. Pedarsani, C. Thrampoulidis (AISTATS 2021).
 </li>
 <li>
 <strong>Quantized Decentralized Stochastic Learning over Directed Graphs</strong> <a href="https://proceedings.mlr.press/v119/taheri20a.html">[link]</a><br>
-**H. Taheri**, A. Mokhtari, H. Hassani, R. Pedarsani (ICML 2020).
+H. Taheri, A. Mokhtari, H. Hassani, R. Pedarsani (ICML 2020).
 </li>
-
 <li>
-  <strong>Optimality of Least-squares for classification in Gaussian Mixture Models</strong> <br>
-**H. Taheri**, R. Pedarsani, C. Thrampoulidis (ISIT 2020).
-  </li>
-  <li>
+<strong>Optimality of Least-squares for classification in Gaussian Mixture Models</strong> <br>
+H. Taheri, R. Pedarsani, C. Thrampoulidis (ISIT 2020).
+</li>
+<li>
 <strong>Sharp Asymptotics and Optimal Performance for Inference in Binary Models</strong> <a href="https://proceedings.mlr.press/v108/taheri20a.html">[link]</a><br>
-**H. Taheri**, R. Pedarsani, C. Thrampoulidis (AISTATS 2020).
+H. Taheri, R. Pedarsani, C. Thrampoulidis (AISTATS 2020).
 </li>
 <li>
 <strong>Robust and Communication-efficient Collaborative Learning</strong> <a href="https://arxiv.org/pdf/1907.10595">[link]</a><br>
-A. Reisizadeh, **H. Taheri**, A. Mokhtari, H. Hassani, R. Pedarsani (NeurIPS 2019).
+A. Reisizadeh, H. Taheri, A. Mokhtari, H. Hassani, R. Pedarsani (NeurIPS 2019).
 </li>
 </ol>
 </div>
