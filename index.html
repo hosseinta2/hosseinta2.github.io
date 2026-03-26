@@ -8,42 +8,40 @@
 body { 
     font-family: Arial, sans-serif; 
     max-width: 900px; 
-    margin:auto; 
-    padding:20px; 
-    line-height:1.6; 
-    position: relative; /* Needed for absolute positioning of the photo */
+    margin: auto; 
+    padding: 20px; 
+    line-height: 1.6; 
+    position: relative;
 }
-h1, h2 { color:#333; }
-a { color:#0645AD; text-decoration:none; }
-a:hover { text-decoration:underline; }
-.section { margin-top:40px; }
+h1, h2 { color: #333; }
+h3 { color: #444; margin-top: 25px; }
+a { color: #0645AD; text-decoration: none; }
+a:hover { text-decoration: underline; }
+.section { margin-top: 40px; }
 
-/* Styles for the profile photo */
 .profile-photo {
     position: absolute;
-    top: 20px; /* Adjust as needed */
-    right: 20px; /* Position from the right edge of the body content */
-    width: 150px; /* Example size, adjust as needed */
-    height: 150px; /* Example size, adjust as needed */
-    border-radius: 50%; /* Makes the photo circular */
-    object-fit: cover; /* Ensures the image covers the area nicely */
-    z-index: 10; /* Ensures it sits above other elements */
+    top: 20px;
+    right: 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    z-index: 10;
 }
 
-/* Adjust header and info layout to make room for the photo */
 .header-content {
-    margin-right: 170px; /* Creates space for a 150px photo + 20px margin */
+    margin-right: 170px;
 }
 
-/* Ensure the list item content respects the new list style */
 ol li {
-    padding-top: 5px; /* Add slight padding for readability */
+    padding-top: 5px;
 }
 </style>
 </head>
 <body>
 
-<img src="myphoto.jpg" alt="Hossein Taheri Profile Photo" class="profile-photo"> 
+<img src="myphoto.jpg" alt="Hossein Taheri Profile Photo" class="profile-photo">
 
 <div class="header-content">
     <h1><strong>Hossein Taheri</strong></h1>
@@ -51,21 +49,22 @@ ol li {
     Postdoctoral Scholar, Computer Science & Engineering<br>
     University of California, San Diego<br>
     Email: htaheri[at]ucsd[dot]edu<br>
-    <a href="https://scholar.google.com/citations?user=J_MeH1gAAAAJ&hl=en">Google Scholar</a> 
+    <a href="https://scholar.google.com/citations?user=J_MeH1gAAAAJ&hl=en">Google Scholar</a>
     </p>
 </div>
 
 <div class="section">
 <p>
-I am a Postdoctoral Scholar in the Department of Computer Science and Engineering at UC San Diego, working with <a href="https://mazumdar.ucsd.edu/" target="_blank">Arya Mazumdar</a>. 
-Previously, I obtained my Ph.D. in Electrical and Computer Engineering from UC Santa Barbara, 
-where I was advised by 
-<a href="https://sites.google.com/view/cthrampo" target="_blank">Christos Thrampoulidis</a>. 
+I am a Postdoctoral Scholar in the Department of Computer Science and Engineering at UC San Diego, working with <a href="https://mazumdar.ucsd.edu/" target="_blank">Arya Mazumdar</a>.
+Previously, I obtained my Ph.D. in Electrical and Computer Engineering from UC Santa Barbara,
+where I was advised by
+<a href="https://sites.google.com/view/cthrampo" target="_blank">Christos Thrampoulidis</a>.
 I completed my B.Sc. in Electrical Engineering and Mathematics at Sharif University of Technology.
 </p>
 </div>
+
 <div class="section">
-<h2>Research Interests </h2>
+<h2>Research Interests</h2>
 <ul>
 <li>Deep Learning Theory, Generalization and Optimization of Neural Networks</li>
 <li>Transformers and in-context learning</li>
@@ -74,13 +73,19 @@ I completed my B.Sc. in Electrical Engineering and Mathematics at Sharif Univers
 <li>High-dimensional Statistics</li>
 </ul>
 </div>
+
 <div class="section">
-<h2>Peer-Reviewed Publications</h2>
+<h2>Papers</h2>
+
+<h3>Preprints</h3>
 <ol>
 <li>
 <strong>On the Theory of Continual Learning with Gradient Descent for Neural Networks</strong> <a href="https://arxiv.org/pdf/2510.05573">[link]</a><br>
 H. Taheri, A. Ghosh, A. Mazumdar (Preprint).
 </li>
+
+
+<h3>Peer-Reviewed Publications</h3>
 <li>
 <strong>Sharper Guarantees for Learning Neural Network Classifiers with Gradient Methods</strong> <a href="https://openreview.net/forum?id=h7GAgbLSmC">[link]</a><br>
 H. Taheri, C. Thrampoulidis, A. Mazumdar (ICLR 2025).
@@ -122,10 +127,9 @@ H. Taheri, R. Pedarsani, C. Thrampoulidis (AISTATS 2020).
 A. Reisizadeh, H. Taheri, A. Mokhtari, H. Hassani, R. Pedarsani (NeurIPS 2019).
 </li>
 </ol>
-</div>
 
-    <div class="section">
-<h2>Other Publications</h2>
+<h3>Other Publications</h3>
+<li>
 <strong>Asymptotic Behavior of Adversarial Training in Binary Linear Classification</strong><br>
 H. Taheri, R. Pedarsani, C. Thrampoulidis (ISIT 2022).
 </li>
@@ -142,6 +146,8 @@ H. Taheri, R. Pedarsani, C. Thrampoulidis (ISIT 2020).
 H. Taheri, R. Pedarsani, C. Thrampoulidis (Allerton 2019).
 </li>
 </ol>
+
 </div>
+
 </body>
 </html>
